@@ -1,0 +1,87 @@
+/* Header */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #d3cfcf;
+    background-color: #fff;
+}
+
+.header-content {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-content h2 a {
+    color: var(--first-color);
+}
+
+.header-content h2 a:hover {
+    color: var(--second-color);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+} 
+
+header nav ul li a {
+    display: block;
+    padding: 10px 14px;
+    color: var(--first-color);
+
+}
+
+header nav ul li a:hover{
+    color: var(--second-color);
+    transition: 0.5s;
+}
+
+header nav ul li a.active:after,
+header nav ul li a:not(.not-this):after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--second-color);
+    transition: width 0.5s;
+}
+
+header nav ul li a.active::after {
+    width: 100%;
+}
+
+header nav ul li a:after {
+    width: 0;
+}
+
+header nav ul li a:hover:after {
+    width: 100%;
+}
+
+header nav ul li a.active{
+    color: var(--second-color   );
+}
+
+header .header-content a.start,
+.start-btn,
+.blue-btn {
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .header-content a.start:hover,
+.start-btn:hover,
+.blue-btn:hover,
+.pricing .pricing-content .pricing-item .pricing-buy:hover{
+    background-color: #1658bb;
+    transition: 0.5s;
+}

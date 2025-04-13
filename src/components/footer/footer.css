@@ -1,0 +1,61 @@
+/* Footer section */
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-item {
+    width: 25%;
+    float: left;
+}
+
+footer .footer-content .footer-title {
+    font-size: 37px;
+    color: var(--first-color);
+    margin-bottom: 8px;
+}
+
+footer .footer-content ul li {
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 25px;
+}
+
+footer .footer-content .footer-item-title {
+    font-size: 18px;
+    color: var(--first-color);
+    margin: 18px 0 20px 0;
+}
+
+footer .footer-content .footer-item-links a {
+    color: var(--first-color);
+    font-size: 15px;
+}
+
+footer .footer-content .footer-item-links a:hover {
+    color: var(--second-color);
+    transition: 0.5s;
+}
+
+.social-icon {
+    color: #212121;
+    transition: color 0.5s;
+}
+
+.social-icon:hover {
+    color: attr(data-color);
+    /* Not supported, so we write overrides below */
+}
+
+/* Fallback for hover using classes */
+.bxl-facebook-circle:hover {
+    color: #1877F2;
+}
+
+.bxl-twitter:hover {
+    color: #1DA1F2;
+}
+
+.bxl-youtube:hover {
+    color: #FF0000;
+}
