@@ -1,0 +1,174 @@
+.concours-list-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .concours-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .concours-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .concours-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #2270e2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .concours-title i {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  
+  .concours-count {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 40px;
+  }
+  
+  /* New Competition Button */
+  .new-concours-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .new-concours-btn {
+    background-color: #2270e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .new-concours-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .new-concours-btn:hover {
+    background-color: #1658bb;
+  }
+  
+  /* Competition Cards */
+  .competitions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .competition-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .competition-info {
+    margin-bottom: 20px;
+  }
+  
+  .competition-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .specialization {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  .competition-year {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .competition-year input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Action Buttons */
+  .competition-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    background-color: white;
+    color: #333;
+  }
+  
+  .action-btn i {
+    margin-right: 6px;
+  }
+  
+  .action-btn:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .import-btn i {
+    color: #2270e2;
+  }
+  
+  .candidates-btn i {
+    color: #6c757d;
+  }
+  
+  .anonymat-btn i:first-child {
+    color: #28a745;
+  }
+  
+  .notes-btn i {
+    color: #fd7e14;
+  }
+  
+  .pv-btn i {
+    color: #dc3545;
+  }
+  
+  .anonymat-btn i.bx-chevron-down {
+    margin-left: 5px;
+    margin-right: 0;
+    font-size: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .competition-actions {
+      flex-direction: column;
+    }
+  
+    .action-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
