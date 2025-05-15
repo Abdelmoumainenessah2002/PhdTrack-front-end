@@ -64,13 +64,7 @@ export default function Admindashbord() {
                 <li>
                   Format des dates : <span className="highlight">JJ/MM/AAAA</span>
                 </li>
-                <li>
-                  Téléchargez notre{" "}
-                  <a href="#" className="model-link">
-                    modèle Excel
-                  </a>{" "}
-                  pour être sûr du format
-                </li>
+                
               </ul>
             </div>
 

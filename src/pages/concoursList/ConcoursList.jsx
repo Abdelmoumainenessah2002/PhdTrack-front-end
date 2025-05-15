@@ -58,12 +58,7 @@ export default function ConcoursList() {
                 <button className="action-btn candidates-btn">
                   <i className="bx bx-user"></i> Candidats
                 </button>
-                <button className="action-btn anonymat-btn">
-                  <i className="bx bx-shield"></i> Anonymat <i className="bx bx-chevron-down"></i>
-                </button>
-                <button className="action-btn notes-btn">
-                  <i className="bx bx-edit"></i> Saisie notes
-                </button>
+
                 <button className="action-btn pv-btn">
                   <i className="bx bx-file"></i> PV Final
                 </button>
