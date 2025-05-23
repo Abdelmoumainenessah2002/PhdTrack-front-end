@@ -1,0 +1,478 @@
+.final-results-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .final-results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  .header-section {
+    background-color: #2270e2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title i {
+    margin-right: 10px;
+    font-size: 26px;
+  }
+  
+  .competition-info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .competition-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .year-tag {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+  
+  .action-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .action-btn i {
+    margin-right: 8px;
+  }
+  
+  .action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    width: 23%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 24px;
+  }
+  
+  .present .stat-icon {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+  }
+  
+  .excluded .stat-icon {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+  }
+  
+  .absent .stat-icon {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+  }
+  
+  .total .stat-icon {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+  }
+  
+  .stat-info {
+    flex: 1;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  /* Info Alert */
+  .info-alert {
+    margin: 20px;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #17a2b8;
+    color: #495057;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-alert i {
+    margin-right: 10px;
+    color: #17a2b8;
+    font-size: 18px;
+  }
+  
+  /* Upload Panel */
+  .upload-panel {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0 20px 20px;
+  }
+  
+  .upload-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .upload-btn i {
+    margin-right: 8px;
+  }
+  
+  .upload-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Results Table */
+  .results-table-container {
+    margin: 0 20px 20px;
+    overflow-x: auto;
+  }
+  
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .results-table th {
+    background-color: #343a40;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .results-table th:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  .results-table th:last-child {
+    border-top-right-radius: 8px;
+  }
+  
+  .results-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    color: #495057;
+  }
+  
+  .results-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .rank-column {
+    width: 70px;
+    text-align: center;
+  }
+  
+  .rank-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .candidate-column {
+    width: 250px;
+  }
+  
+  .candidate-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .candidate-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: #6c757d;
+    font-size: 20px;
+  }
+  
+  .candidate-details {
+    flex: 1;
+  }
+  
+  .candidate-name {
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  .candidate-firstname {
+    color: #6c757d;
+    font-size: 13px;
+  }
+  
+  .candidate-id {
+    color: #6c757d;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+  .average-column {
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  .decision-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .decision-badge.success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+  }
+  
+  .decision-badge.fail {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+  }
+  
+  .action-column {
+    width: 80px;
+    text-align: center;
+  }
+  
+  .edit-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e9ecef;
+    color: #212529;
+  }
+  
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #212529;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #6c757d;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #495057;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .modal-footer {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .save-btn {
+    background-color: #2270e2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .save-btn:hover {
+    background-color: #1658bb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .stats-section {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .stat-card {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .action-buttons {
+      margin-left: 0;
+    }
+  
+    .stat-card {
+      width: 100%;
+    }
+  
+    .candidate-column {
+      width: auto;
+    }
+  }
+  

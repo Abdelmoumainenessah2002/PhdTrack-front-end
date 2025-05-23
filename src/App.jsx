@@ -9,7 +9,9 @@ import Admindashbord from "./pages/adminDashbord/Admindashbord"
 import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import ConcoursList from "./pages/concoursList/ConcoursList"
-
+import ResultsStatus from "./components/results status/ResultsStatus"
+import FinalResults from "./pages/finalResults/FinalResults"
+import Linknames from "./pages/finalResults/Linknames"
 function App() {
   return (
     <>
@@ -24,6 +26,9 @@ function App() {
           <Route path="/forgot-password" element={<Forgot />} />
           <Route path="/admin-dashbord" element={<Admindashbord />} />
           <Route path="/concours-list" element={<ConcoursList />} />
+          <Route path="/results-status" element={<ResultsStatus  />} />
+          <Route path="/results" element={<FinalResults />} />
+          <Route path="/link-names" element={<Linknames />} />
         </Routes>
         <Footer />
       </BrowserRouter>
